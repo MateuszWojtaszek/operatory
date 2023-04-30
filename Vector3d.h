@@ -15,9 +15,14 @@ public:
     Vector3d operator-(const Vector3d& v) const;
     Vector3d operator*(const Vector3d& v) const;
     friend std::ostream & operator<<(std::ostream &stream,const Vector3d &v);
+    friend Vector3d operator*(const Vector3d& v, double val);
+    friend Vector3d operator*(double val, const Vector3d& v);
 };
 
 std::ostream & operator<<(std::ostream &stream,const Vector3d &v);
+
+Vector3d operator*(const Vector3d& v, double val);
+Vector3d operator*(double val, const Vector3d& v);
 
 
 #endif //OPERATOR_OVERLOADING_VECTOR3D_H

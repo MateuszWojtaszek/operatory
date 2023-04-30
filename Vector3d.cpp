@@ -39,3 +39,13 @@ Vector3d Vector3d::operator*(const Vector3d &v) const {
     tmp_v.pos_z=(pos_x*v.pos_y)-(v.pos_x*pos_y);
     return  tmp_v;
 }
+
+Vector3d operator*(const Vector3d &v, double val) {
+    return Vector3d(v.pos_x*val,v.pos_y*val,v.pos_z*val);
+}
+
+Vector3d operator*(double val, const Vector3d &v) {
+    return Vector3d(v.pos_x*val,v.pos_y*val,v.pos_z*val);
+}
+
+
