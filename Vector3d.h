@@ -17,6 +17,7 @@ public:
     friend std::ostream & operator<<(std::ostream &stream,const Vector3d &v);
     friend Vector3d operator*(const Vector3d& v, double val);
     friend Vector3d operator*(double val, const Vector3d& v);
+    double operator[](int elem) const;
 };
 
 std::ostream & operator<<(std::ostream &stream,const Vector3d &v);
