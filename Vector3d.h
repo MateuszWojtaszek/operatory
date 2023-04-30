@@ -13,6 +13,7 @@ public:
     explicit Vector3d(double x=0, double y=0, double z=0);
     Vector3d operator+(const Vector3d& v) const;
     Vector3d operator-(const Vector3d& v) const;
+    Vector3d operator*(const Vector3d& v) const;
     friend std::ostream & operator<<(std::ostream &stream,const Vector3d &v);
 };
 

@@ -28,3 +28,14 @@ std::ostream &operator<<(std::ostream &stream, const Vector3d &v) {
     stream << "pos_x: "<<v.pos_x<<" "<<"pos_y: "<<v.pos_y<<" "<<"pos_z: "<<v.pos_z<<" ";
     return stream;
 }
+
+Vector3d Vector3d::operator*(const Vector3d &v) const {
+   //v2*v3=  | i,  j,  k|
+   //        |a2, b2, c2|
+   //        |a3, b3, c3| (b2*c3-b3*c2, -(a2*c3 - a3*c2),(a2*b3 - a3*b2)
+    Vector3d tmp_v;
+    tmp_v.pos_x=(this->pos_y*v.pos_z)-(v.pos_y*this->pos_z);
+    tmp_v.pos_y=-((pos_x*v.pos_z)-(v.pos_x*pos_z));
+    tmp_v.pos_z=(pos_x*v.pos_y)-(v.pos_x*pos_y);
+    return  tmp_v;
+}
