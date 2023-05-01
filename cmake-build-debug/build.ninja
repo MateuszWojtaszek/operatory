@@ -61,6 +61,12 @@ build CMakeFiles/operator_overloading.dir/Vector3d.cpp.o: CXX_COMPILER__operator
   OBJECT_DIR = CMakeFiles/operator_overloading.dir
   OBJECT_FILE_DIR = CMakeFiles/operator_overloading.dir
 
+build CMakeFiles/operator_overloading.dir/Matrix.cpp.o: CXX_COMPILER__operator_overloading_Debug /Users/mateuszwojtaszek/CLionProjects/operator_overloading/Matrix.cpp || cmake_object_order_depends_target_operator_overloading
+  DEP_FILE = CMakeFiles/operator_overloading.dir/Matrix.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -Wall -Wextra -O -pedantic -Werror=return-type -Werror=parentheses -Werror=vla -Werror=array-bounds -Wcast-qual -Wuninitialized -std=gnu++17
+  OBJECT_DIR = CMakeFiles/operator_overloading.dir
+  OBJECT_FILE_DIR = CMakeFiles/operator_overloading.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target operator_overloading
@@ -69,7 +75,7 @@ build CMakeFiles/operator_overloading.dir/Vector3d.cpp.o: CXX_COMPILER__operator
 #############################################
 # Link the executable operator_overloading
 
-build operator_overloading: CXX_EXECUTABLE_LINKER__operator_overloading_Debug CMakeFiles/operator_overloading.dir/main.cpp.o CMakeFiles/operator_overloading.dir/Vector3d.cpp.o
+build operator_overloading: CXX_EXECUTABLE_LINKER__operator_overloading_Debug CMakeFiles/operator_overloading.dir/main.cpp.o CMakeFiles/operator_overloading.dir/Vector3d.cpp.o CMakeFiles/operator_overloading.dir/Matrix.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
   OBJECT_DIR = CMakeFiles/operator_overloading.dir
   POST_BUILD = :

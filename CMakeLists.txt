@@ -27,4 +27,4 @@ add_compile_options(-Werror=array-bounds)
 add_compile_options ( -Wcast-qual )
 add_compile_options ( -Wuninitialized )
 
-add_executable(operator_overloading main.cpp Vector3d.cpp Vector3d.h)
+add_executable(operator_overloading main.cpp Vector3d.cpp Vector3d.h Matrix.cpp Matrix.h)
